@@ -1,0 +1,44 @@
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 4rem 1.5rem 6rem;
+}
+
+.title {
+    font-family: var(--font-heading);
+    font-size: 2.5rem;
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+.lastUpdated {
+    color: var(--text-muted);
+    margin-bottom: 3rem;
+}
+
+.content {
+    color: var(--text-main);
+    line-height: 1.7;
+}
+
+.content h2 {
+    color: #fff;
+    font-size: 1.5rem;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.content p {
+    margin-bottom: 1.5rem;
+    color: var(--text-muted);
+}
+
+.content ul {
+    margin-bottom: 1.5rem;
+    padding-left: 1.5rem;
+}
+
+.content li {
+    margin-bottom: 0.5rem;
+    color: var(--text-muted);
+}

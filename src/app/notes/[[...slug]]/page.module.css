@@ -1,0 +1,254 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1.5rem 5rem;
+}
+
+.breadcrumbs {
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.9rem;
+    color: var(--text-muted);
+}
+
+.crumbLink {
+    text-transform: capitalize;
+}
+
+.crumbLink:hover {
+    color: var(--primary);
+    text-decoration: underline;
+}
+
+.crumbIcon {
+    color: rgba(255, 255, 255, 0.2);
+}
+
+.header {
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    padding-bottom: 2rem;
+}
+
+.title {
+    font-family: var(--font-heading);
+    font-size: 2.5rem;
+    color: #fff;
+    margin-bottom: 0.5rem;
+    text-transform: capitalize;
+}
+
+.subtitle {
+    color: var(--text-muted);
+}
+
+.searchBar {
+    background-color: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: 12px;
+    padding: 10px 16px;
+    display: flex;
+    align-items: center;
+    width: 300px;
+}
+
+.searchIcon {
+    color: var(--text-muted);
+    margin-right: 10px;
+}
+
+.searchInput {
+    flex: 1;
+    background: transparent;
+    border: none;
+    font-size: 0.95rem;
+    color: #fff;
+    outline: none;
+    font-family: var(--font-main);
+}
+
+.mainLayout {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    gap: 3rem;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.filterGroup h3 {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    color: #fff;
+}
+
+.filterHint {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.quickLinks {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.quickLink {
+    color: var(--text-muted);
+    padding: 8px 12px;
+    border-radius: 8px;
+    transition: all 0.2s;
+    background: rgba(255, 255, 255, 0.03);
+}
+
+.quickLink:hover {
+    color: #fff;
+    background: var(--primary);
+}
+
+.notesGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+/* Detail View Styles */
+.contentWrapper {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.detailHeader {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.metaTags {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.tag {
+    background: rgba(59, 130, 246, 0.1);
+    color: var(--primary);
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.detailTitle {
+    font-family: var(--font-heading);
+    font-size: 2.5rem;
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+.metaStats {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    color: var(--text-muted);
+    font-size: 0.95rem;
+}
+
+.stat {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.actions {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 3rem;
+}
+
+.pdfViewer {
+    background-color: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: 16px;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 3rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.pdfPlaceholder {
+    text-align: center;
+    max-width: 400px;
+    padding: 2rem;
+}
+
+.pdfIcon {
+    color: var(--text-muted);
+    margin-bottom: 1rem;
+}
+
+.pdfPlaceholder h3 {
+    color: #fff;
+    margin-bottom: 0.5rem;
+}
+
+.pdfPlaceholder p {
+    color: var(--text-muted);
+    line-height: 1.5;
+}
+
+.description h3,
+.topics h4 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #fff;
+    margin-top: 2rem;
+}
+
+.description p {
+    color: var(--text-muted);
+    line-height: 1.7;
+    font-size: 1.05rem;
+}
+
+.topics ul {
+    padding-left: 1.5rem;
+    color: var(--text-muted);
+}
+
+.topics li {
+    margin-bottom: 0.5rem;
+}
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.5rem;
+    }
+
+    .searchBar {
+        width: 100%;
+    }
+
+    .mainLayout {
+        grid-template-columns: 1fr;
+    }
+
+    .sidebar {
+        display: none;
+    }
+}

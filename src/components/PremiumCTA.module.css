@@ -1,0 +1,74 @@
+.ctaCard {
+    background: linear-gradient(135deg, rgba(250, 204, 21, 0.1), rgba(250, 204, 21, 0.05));
+    border: 1px solid rgba(250, 204, 21, 0.2);
+    border-radius: 16px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.iconWrapper {
+    width: 60px;
+    height: 60px;
+    background: var(--accent);
+    color: #000;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 0 20px rgba(250, 204, 21, 0.4);
+}
+
+.content h3 {
+    color: #fff;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    font-family: var(--font-heading);
+}
+
+.content p {
+    color: var(--text-muted);
+    margin-bottom: 1.5rem;
+    font-size: 0.95rem;
+}
+
+.benefits {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 2rem;
+    text-align: left;
+    width: 100%;
+}
+
+.benefits li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 0.5rem;
+    font-size: 0.95rem;
+    color: #fff;
+}
+
+.benefits li svg {
+    color: var(--accent);
+}
+
+.action {
+    width: 100%;
+}
+
+.upgradeBtn {
+    background: var(--accent) !important;
+    color: #000 !important;
+    font-weight: 700 !important;
+}
+
+.upgradeBtn:hover {
+    background: #EAB308 !important;
+    /* Darker yellow */
+}
